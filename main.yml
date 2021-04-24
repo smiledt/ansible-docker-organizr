@@ -1,0 +1,8 @@
+---
+# Deploys an Organizr container on the docker host.
+
+- name: Deploy Organizr web interface.
+  hosts: organizr
+  become: true
+  roles:
+  - role: docker-organizr

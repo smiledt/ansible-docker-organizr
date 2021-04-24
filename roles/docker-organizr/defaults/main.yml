@@ -1,0 +1,16 @@
+---
+
+organizr_name: organizr
+organizr_image: organizr/organizr
+organizr_ports:
+  - 80:80
+organizr_config_directory: "/opt/organizr"
+organizr_environment_variables:
+  PUID: "1000"
+  PGID: "1000"
+  fpm: "true"
+  TZ: "America/Chicago"
+  branch: "v2-master"
+
+organizr_docker_additional_options:
+  restart_policy: unless-stopped
